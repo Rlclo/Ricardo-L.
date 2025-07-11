@@ -1,14 +1,13 @@
-[8:17 PM, 7/10/2025] Ri: Ricardo Leal
-Cybersecurity Enthusiast | SOC Intern | SIEM | MITRE ATT&CK | Threat Detection
-Connect with me on LinkedIn
-About Me
-I am a cybersecurity enthusiast with over 4 years of IT support experience and 4 months of hands-on security operations experience. I am currently pursuing a Bachelor's Degree in Cybersecurity at Ensign College with a 3.96 GPA.
-I'm passionate about incident response, threat detection, risk assessment, and developing security policies. My work is guided by standards like NIST and MITRE ATT&CK. I enjoy working with Wazuh, Elastic SIEM, Splunk, and participating in hands-on labs and threat simulations to sharpen my skills.
-Certifications
-	•	CompTIA Security+
-	•	ISC2 Certified in Cybersecurity (CC)
-	•	TestOut Ethical Hacker (PenTest+…
-[8:29 PM, 7/10/2025] Ri: <!DOCTYPE html>
+from zipfile import ZipFile
+from pathlib import Path
+
+# Create a directory to store files
+base_dir = Path("/mnt/data/ricardo_portfolio")
+base_dir.mkdir(parents=True, exist_ok=True)
+
+# Sample HTML content (slightly updated to use local image)
+html_content = """
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -74,18 +73,6 @@ Certifications
       object-fit: cover;
       margin-bottom: 10px;
     }
-    blockquote {
-      margin: 20px 0;
-      padding: 10px 20px;
-      border-left: 4px solid #40E0D0;
-      font-style: italic;
-      background-color: #112B3C;
-    }
-    blockquote footer {
-      text-align: right;
-      color: #9ECFEF;
-      font-style: normal;
-    }
     a.button {
       color: #40E0D0;
       text-decoration: none;
@@ -101,11 +88,11 @@ Certifications
 </head>
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/yourusername/your-repo/main/profile.jpg" alt="Ricardo Leal" class="profile" />
+    <img src="ricardo_leal_photo.jpg" alt="Ricardo Leal" class="profile" />
     <h1>Ricardo Leal</h1>
     <p class="tagline">Cybersecurity Enthusiast | Information Security Analyst Intern | SIEM | MITRE ATT&CK | Threat Detection</p>
     <p>
-      <a href="https://www.linkedin.com/in/ricardo-l-877498161?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="button" target="_blank">Connect with me on LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ricardo-l-877498161" class="button" target="_blank">Connect with me on LinkedIn</a>
     </p>
   </header>
 
@@ -114,67 +101,22 @@ Certifications
     <p>I am a cybersecurity enthusiast with over 4 years of IT support experience and hands-on security operations experience. I also have experience in Governance, Risk, and Compliance (GRC). I am currently pursuing a Bachelor's Degree in Cybersecurity at Ensign College with a 3.96 GPA.</p>
     <p>I'm passionate about incident response, threat detection, risk assessment, and developing effective security policies. My work is guided by standards like NIST and MITRE ATT&CK. I enjoy working with Wazuh, Elastic SIEM, Splunk, and engaging in hands-on labs and threat simulations to continuously sharpen my skills.</p>
   </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>CompTIA Security+</li>
-      <li>ISC2 Certified in Cybersecurity (CC)</li>
-      <li>TestOut Ethical Hacker (PenTest+ Equivalent)</li>
-      <li>Splunk Fundamentals & Using Fields</li>
-      <li>Foundations & Intermediate MITRE ATT&CK – AttackIQ</li>
-      <li>Foundations of Purple Teaming – AttackIQ</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Hands-on Projects</h2>
-    <ul>
-      <li><strong>Phishing Playbook:</strong> Developed a structured phishing response plan using VirusTotal, Hybrid Analysis, and Joe Sandbox.</li>
-      <li><strong>SIEM Alerting:</strong> Created and fine-tuned Wazuh alerts, configured log forwarding, and conducted triage in simulated SOC scenarios.</li>
-      <li><strong>MITRE ATT&CK Mapping:</strong> Mapped alerts to techniques like T1040, T1202, and T1078. Improved response accuracy.</li>
-      <li><strong>Incident Reports:</strong> Documented real-world attacks with root cause, triage, timeline, and recovery strategies (PowerShell, Akagi64, Evil-WinRM).</li>
-      <li><strong>APT Emulation:</strong> Simulated Lazarus Group using PowerShell, Empire, Mimikatz, and LOLBins to test defense strategies.</li>
-      <li><strong>NIST-Based IR Planning:</strong> Developed incident response plan and risk analysis using DoD STIGs for a Utah-based company.</li>
-      <li><strong>Sliver C2 Lab:</strong> Emulated red team command/control using encryption, authentication, and stealth techniques.</li>
-      <li><strong>Firewall and Network Lab:</strong> Built home lab using PfSense and Proxmox for hands-on experience in network segmentation and defense.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Experience</h2>
-    <h3>Information Security Analyst Intern – The Church of Jesus Christ of Latter-day Saints (2025–Present)</h3>
-    <ul>
-      <li>Monitored and triaged security logs using ServiceNow and BitSight.</li>
-      <li>Performed vendor and system risk assessments using SOC 2 reports, TLS audits, and vulnerability scans.</li>
-      <li>Contributed to NIST 800-series gap analysis and third-party security evaluations.</li>
-    </ul>
-    <h3>IT Support & Network Technician – The Church of Jesus Christ of Latter-day Saints (2021–2025)</h3>
-    <ul>
-      <li>Managed Azure AD for 500,000+ users across US, Latin America, and Europe.</li>
-      <li>Configured Meraki networks, VPNs, VLANs, and performed firewall diagnostics.</li>
-      <li>Helped resolve major incidents (e.g., CrowdStrike BSOD July 2024) and trained new IT staff.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>What Others Say</h2>
-    <blockquote>
-      <p>“Responsible and accountable within our stewardship. For being diligent in your position.”</p>
-      <footer>— Ray</footer>
-    </blockquote>
-    <blockquote>
-      <p>“Thanks for the great work on the projects and exceptions.”</p>
-      <footer>— Niel</footer>
-    </blockquote>
-    <blockquote>
-      <p>“Thank you Ricardo for providing exceptional support to the people we help.”</p>
-      <footer>— Roberto</footer>
-    </blockquote>
-  </section>
-
-  <footer>
-    &copy; 2025 Ricardo Leal — Cybersecurity Portfolio
-  </footer>
 </body>
 </html>
+"""
+
+# Write the HTML file
+html_path = base_dir / "index.html"
+html_path.write_text(html_content)
+
+# Add a placeholder image
+image_path = base_dir / "ricardo_leal_photo.jpg"
+image_path.write_bytes(b"placeholder_image")
+
+# Create a ZIP file
+zip_path = Path("/mnt/data/ricardo_portfolio.zip")
+with ZipFile(zip_path, 'w') as zipf:
+    zipf.write(html_path, arcname="index.html")
+    zipf.write(image_path, arcname="ricardo_leal_photo.jpg")
+
+zip_path.name
